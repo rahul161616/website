@@ -5,7 +5,7 @@
 .container {
     display: inline;
     position: relative;
-  top: -15px;
+    top: -15px;
 }
 
 h3 {
@@ -17,7 +17,7 @@ h3 {
     top: 20px;
 }
 
-.content ul li {
+.content li li {
     list-style: none;
     display: inline;
     position: relative;
@@ -25,7 +25,7 @@ h3 {
     left: -10px;
 }
 
-ul {
+li {
     text-align: center;
     font-family: sans-serif;
 }
