@@ -94,6 +94,9 @@ h1 {
     color: rgb(190, 179, 179)
 }
 
+.hover a li:hover {
+    color: purple;
+}
 
 .wt article ul li {
     list-style: none;
@@ -119,7 +122,9 @@ h1 {
     color: rgb(190, 179, 179);
     border-color: rgb(190, 179, 179);
 }
-
+.aside a:hover {
+    color:rgb(153, 22, 153);
+}
 .input {
     width: 10%;
     border: solid 1px gray;
