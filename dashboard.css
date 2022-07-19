@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 15px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.top-header {
+    margin-left: 400px;
+    font-weight: 900;
+}
+
+.main-header {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 330px;
+    margin-bottom: 50px;
+}
+
+.navHeader {
+    margin-top: 50px;
+    margin-left: 410px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.navHeader2 {
+    margin-left: 540px;
+
+}
+
+.container {
+
+    color: rgb(171, 167, 167);
+    display: inline-block;
+    position: relative;
+}
+
+.abouta {
+    margin-left: 80px;
+}
+
+.box {
+    padding-top: 10px;
+}
+
+.aboutarticle {
+    display: block;
+}
+
+.top {
+    display: inline;
+    top: 50px;
+    position: relative;
+}
+
+.All {
+    background-color: rgb(27, 1, 27);
+}
+
+textarea {
+    background-color: gray;
+    color: white;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(63, 22, 63);
+    border-color: rgb(63, 22, 63);
+    box-shadow: none;
+}
+
+.btn1 {
+    color: white;
+    background-color: rgb(63, 22, 63);
+    border-color: rgb(63, 22, 63);
+    margin-left: -20px;
+    padding: 14px 35px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.social {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*responsive*/
+@media only screen and (max-width:600px) {
+    * {
+        margin-left: 15px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .abouta {
+        width: 80px;
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .top-header {
+        margin-left: -50px;
+        font-size: 24px;
+    }
+
+    .main-header {
+        margin-left: -30px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .navHeader {
+        margin-left: 0px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    label {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 10px;
+    }
+
+    .box {
+        display: block;
+        padding: 5px;
+    }
+
+    .pad1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pad2 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        top: 2px;
+    }
+
+    .files {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-link-twitter {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .social-input-twitter {
+        position: absolute;
+        left: 128px;
+        top: 337px;
+    }
+
+}

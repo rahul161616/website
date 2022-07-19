@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>
+        Dashboard
+    </title>
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+    <div class="All">
+        <div class="container">
+            <div class="box">
+                <h1 class="top-header">*WELCOME TO THE ADMIN PANEL*</h1>
+                <h1 class="main-header">Enter the changes you want to publish!</h1>
+
+                <h2 class="navHeader">For the Nav Bar</h2>
+                <label for="home">Home</label>
+                <input type="text" id="home" name="home" class="box">
+                <label for="about">About</label>
+                <input type="text" id="About" name="about" class="box">
+                <label for="header">My services</label>
+                <input type="services" id="services" name="services" class="box">
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h1 class="navHeader">For the header section</h1>
+                <label for="header">Header</label>
+                <input type="text" id="header" name="header" class="box">
+                <label for="headerText">Header-Text</label>
+                <input type="headerText" id="headerText" name="headerText" class="box">
+                <label for="about">About</label>
+                <input type="text" id="About" name="about" class="box">
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h1 class="headerabout navHeader">The articles inside About Section</h1>
+                <label for="articleAbout" class="aboutarticle">Article for About</label>
+                <textarea class="abouta" rows="6" cols="55" id="articleAbout" name="articleAbout"
+                    placeholder="Enter the article"></textarea>
+                <br> <label for="skills">Skills</label>
+                <div>
+                    <input type="text" id="skills1" name="skills1" class="box">
+                    <input type="text" id="skills2" name="skills2" class="box">
+                    <input type="text" id="skills3" name="skills3" class="box">
+                </div>
+                <label for="experience">Experience</label>
+                <div>
+                    <input type="text" id="experience1" name="experience1" class="box">
+                    <input type="text" id="experience2" name="experience2" class="box">
+                    <input type="text" id="experience3" name="experience3" class="box">
+                </div>
+                <label for="education">Education</label>
+                <div>
+                    <input type="text" id="education1" name="education1" class="box">
+                    <input type="text" id="education2" name="education2" class="box">
+                    <input type="text" id="education3" name="education3" class="box">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h1 class="navHeader navHeader2">Services Article</h1>
+                <label for="music" class="pad1">Music Theory</label>
+                <textarea class="top" id="music" name="music" rows="5"></textarea>
+                <label for="guitar" class="pad2">Guitar</label>
+                <textarea class="top" id="guitar" name="guitar" rows="5"></textarea>
+                <label for="drums" class="pad3">Drums</label>
+                <textarea class="top" id="drums" name="drums" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h1 class="social">Social Media Links</h1>
+                <label for="facebook" class="social-link">Facebook</label>
+                <input type="link" id="facebook" name="facebook">
+                <label for="instagram" class="social-link">Instagram</label>
+                <input type="link" id="instagram" name="instagram">
+                <!--linki=linkinstagram-->
+                <label for="twitter" class="social-link-twitter">Twitter</label>
+                <input type="link" id="twitter" name="twitter" class="social-input-twitter">
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="files">
+                    <label for="backimg">Background Image</label>
+                    <input type="file" accept="images/png">
+                    <label for="backimg">About Me Image</label>
+                    <input type="file" accept="images/png">
+                </div>
+            </div>
+        </div>
+        <button class="btn"><a href="./index.html">Return</button>
+        <button class="btn1" type="submit">Publish</button>
+    </div>
+</body>
