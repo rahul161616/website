@@ -1,182 +1,274 @@
 * {
     margin: 0px;
-    padding: 15px;
-    margin-left: 10px;
-    font-family: sans-serif;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-
-
+html{
+    scroll-behavior: smooth;
+}
 body {
-    background-color: black;
+     background: #080808; 
+    color: white;
 }
 
-.top-header {
-    margin-left: 400px;
-    font-weight: 900;
+#header {
+    width: 100%;
+    height: 100vh;
+     background-image: url(images/backgroundimg.jpg); 
+    /*url (path)*/
+    background-size: cover;
+    background-position: center;
 }
-
-.main-header {
-    font-size: 40px;
-    font-weight: 700;
-    margin-left: 330px;
-    margin-bottom: 50px;
+.container{
+    padding: 10px 10%; /*top bottom 10px 10% leftright*/
 }
-
-.navHeader {
-    margin-top: 50px;
-    margin-left: 410px;
-    margin-bottom: 20px;
-    font-weight: 600;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
 }
-
-.navHeader2 {
-    margin-left: 540px;
-
+.logo
+{
+    width:140px;
+    border-radius: 20px;
 }
-
-.container {
-
-    color: rgb(171, 167, 167);
+nav ul li{
     display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 15 px;
+}
+nav ul li a:hover{
+    color:purple;
+    border-bottom: purple;
+}
+.header-text{
+    margin-top:20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header-text h1 span {
+ color:purple ;
+}
+/* about */
+#about{
+     padding: 80px 0px;
+     color: #ababab;
+}
+.row
+{
+    display: flex; /*to get the text side by side*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+     flex-basis:35%; /*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.*/
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis:60%;
+}
+.sub-title{
+      font-size: 60px;
+      font-weight: 600;
+      color: white;
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
     position: relative;
 }
-
-.abouta {
-    margin-left: 80px;
+.tab-links:hover{
+    color: purple;
 }
-
-.box {
-    padding-top: 10px;
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0px;
 }
-
-.aboutarticle {
+.tab-contents ul li span{
+      color: rgb(107, 13, 13);  
+      font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
     display: block;
 }
-
-.top {
-    display: inline;
-    top: 50px;
-    position: relative;
+/*
+link items -----------------------------------*/
+.footer {
+    position: absolute;
+    display: block;
+    height: 25px;
+    left: 715px;
 }
 
-.All {
-    background-color: rgb(27, 1, 27);
-}
-
-textarea {
-    background-color: gray;
-    color: white;
-}
-
-.btn {
-    color: white;
-    background-color: rgb(63, 22, 63);
-    border-color: rgb(63, 22, 63);
-    box-shadow: none;
-}
-
-.btn1 {
-    color: white;
-    background-color: rgb(63, 22, 63);
-    border-color: rgb(63, 22, 63);
-    margin-left: -20px;
-    padding: 14px 35px;
-}
-
-.btn a {
+.footer a {
     text-decoration: none;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: violet;
+}
+
+/* --------------------------------------*/
+/* Services */
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+background: rgb(27, 27, 27);
+padding: 30px;
+font-size: 13px;
+font-weight: 300;
+border-right: 8px;
+border-radius: 8px;
+}
+.services-list div h2 {
+    font-size: 20px;
+    font-weight: 500;
+   margin-bottom: 12px;
+}
+.services-list div a{
+text-decoration: none;
+display: inline-block;
+margin-top:20px;
+font-size: 12px;
+color: rgb(192, 13, 192);
+}
+
+.services-list :hover {
+  background:rgb(54, 3, 54);
+   font-size: 12px;
+}
+/*contact*/
+
+.contact-left{
+    flex-basis:35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+.contact-left p{
+    flex-basis: 35%;
+    margin-top: 30px;
+}
+.contact-left p span{
+    color: purple;
+    margin: right 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: rgb(76, 26, 90);
+    text-decoration: none;
+    padding: 10px;
     color: white;
+    border-radius: 10px;
 }
-
-.social {
-    margin-top: 100px;
-    margin-bottom: 50px;
+.contact-right form{  /*is at right side*/
+      width: 100%;
 }
-
-/*responsive*/
-@media only screen and (max-width:600px) {
-    * {
-        margin-left: 15px;
-    }
-
-    .container {
-        display: flex;
-    }
-
-    .abouta {
-        width: 80px;
-        height: auto;
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .top-header {
-        margin-left: -50px;
-        font-size: 24px;
-    }
-
-    .main-header {
-        margin-left: -30px;
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    .navHeader {
-        margin-left: 0px;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    label {
-        font-size: 12px;
-        font-weight: 300;
-        padding: 10px;
-    }
-
-    .box {
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline: none;
+    background: rgb(75, 7, 75);
+    padding:15px;
+    margin:15px 0;
+    color:#fff;
+    font-size: 15px;
+    border-radius:6px;
+}
+form .btn2{
+    padding: 14px 16px;
+    font-size: 15px;
+   cursor:pointer;
+}
+          .material-symbols-outlined{  /*icons = hidden till small screen*/
+              display: none;
+          }
+/*css for responsive design*/
+@media only screen and (max-width:600px){
+      #header{
+          background-image: url(images/backgrounimgphn.jpg);
+      }
+      .header-text{
+          margin-top: 100%;
+          font-size:17px;
+      }
+                 .header-text h1{
+                     margin-top: 100%;
+                     font-size: 30px;
+                 }
+    .material-symbols-outlined{
         display: block;
-        padding: 5px;
+        font-size: 25px; 
+        color: rgb(255, 255, 255);
+       
     }
-
-    .pad1 {
-        display: flex;
-        flex-direction: column;
+    nav ul {
+        background: rgb(51, 4, 51);
+        position:fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
     }
-
-    .pad2 {
-        flex-direction: column;
-        display: flex;
+    
+   nav ul li {
+   display: block;
+   margin:25px;
+         }
+  .material-symbols-outlined{
+    position:absolute;
+     top: 25px;
+     left:25px;
+     cursor:pointer;
     }
-
-    .top {
-        display: flex;
-        flex-direction: column;
-        top: 2px;
+    .sub-title{
+        font-size:35px;
     }
-
-    .files {
-        display: flex;
-        flex-direction: column;
+    .about-col-1,.about-col-2{
+        flex-basis:100%;
     }
-
-    .social-link-twitter {
-        display: flex;
-        flex-direction: row;
-        margin-left: 20px;
+    .about-col-2{
+        font-size: 14px;
     }
-
-    .social-input-twitter {
-        position: absolute;
-        left: 35px;
-        top: 480px;
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
     }
-
-    .All {
-        margin-left: -6px;
-    }
-
-    .btn1 {
-        margin-left: 15px;
+    .contact-left,.contact-right{
+        flex-basis:100%;
     }
 }

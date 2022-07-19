@@ -167,8 +167,16 @@ textarea {
 
     .social-input-twitter {
         position: absolute;
-        left: 128px;
-        top: 337px;
+        left: 35px;
+        top: 480px;
+    }
+
+    .All {
+        margin-left: -6px;
+    }
+
+    .btn1 {
+        margin-left: 15px;
     }
 
 }
